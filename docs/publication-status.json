@@ -1,0 +1,20 @@
+{
+  "repository": "https://github.com/Shahidali78/minideepseek",
+  "owner_verified": "Shahidali78",
+  "visibility": "public",
+  "initial_verified_source_commit": "ff2c6391c57fac7e34d19bb21855b6fa06795cdd",
+  "initial_published_files": 110,
+  "remote_blobs_matched_reviewed_commit": true,
+  "raw_outputs_datasets_and_checkpoints_excluded": true,
+  "initial_history_secret_scan_commits": 1,
+  "initial_history_secret_scan_issues": 0,
+  "first_ci": {
+    "url": "https://github.com/Shahidali78/minideepseek/actions/runs/42397034508",
+    "conclusion": "success",
+    "cpu_tests_passed": 96,
+    "optional_tests_skipped": 5
+  },
+  "full_local_tests_passed": 101,
+  "workflow": "https://github.com/Shahidali78/minideepseek/actions/workflows/ci.yml",
+  "scope": "Initial source publication verified on 7 November 2026; later documentation commits retain this historical source verification."
+}

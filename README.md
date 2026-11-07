@@ -1,5 +1,7 @@
 # MiniDeepSeek
 
+[![CPU tests](https://github.com/Shahidali78/minideepseek/actions/workflows/ci.yml/badge.svg)](https://github.com/Shahidali78/minideepseek/actions/workflows/ci.yml)
+
 Can verifiable rewards improve a small model's mathematical accuracy? MiniDeepSeek compares Qwen3-0.6B, supervised LoRA adapters and eight-response GRPO on a native Windows laptop with a 6 GB RTX 4050. Seven exploratory validation configurations led to two frozen finalists: the unmodified model and GRPO trained directly from it.
 
 **This is a small-model GRPO research experiment, not a reproduction of the full DeepSeek-R1 training system.** The motivation is practical: measure what short local reinforcement learning changes, including failed hypotheses, sampling uncertainty and hardware costs.
