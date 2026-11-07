@@ -1,0 +1,181 @@
+{
+  "run_id": "phase3-final-20261030",
+  "manifest_sha256": "8d63264c0de13cc187616e9826ab05bada97c94fe6e4d50502c90fcf825df18c",
+  "n_unique_questions": 234,
+  "n_raw_rows": 240,
+  "n_completions": 3744,
+  "metrics": {
+    "Base": {
+      "accuracy_at_1": 0.8589743589743589,
+      "pass_at_8": 0.9914529914529915,
+      "majority_at_8": 0.9658119658119658,
+      "format_rate": 0.9310897435897436,
+      "n_questions": 234,
+      "answer_extraction_success": 0.9310897435897436,
+      "invalid_answer_rate": 0.06891025641025642,
+      "parsed_incorrect_rate": 0.09615384615384616,
+      "truncation_rate": 0.0005341880341880342,
+      "average_generated_tokens": 57.31410256410256,
+      "seconds_per_question": 9.74189743589765,
+      "seconds_per_response": 1.2177371794872063,
+      "peak_vram_bytes": 1573084160,
+      "accuracy_at_1_ci95": [
+        0.8085643408263159,
+        0.8977881223256305
+      ],
+      "pass_at_8_ci95": [
+        0.9693771446087274,
+        0.997653013277866
+      ],
+      "majority_at_8_ci95": [
+        0.9339997129113559,
+        0.9825766976072413
+      ]
+    },
+    "Base + GRPO": {
+      "accuracy_at_1": 0.8376068376068376,
+      "pass_at_8": 0.9871794871794872,
+      "majority_at_8": 0.9658119658119658,
+      "format_rate": 0.9337606837606838,
+      "n_questions": 234,
+      "answer_extraction_success": 0.9337606837606838,
+      "invalid_answer_rate": 0.06623931623931624,
+      "parsed_incorrect_rate": 0.09722222222222222,
+      "truncation_rate": 0.0010683760683760685,
+      "average_generated_tokens": 57.59188034188034,
+      "seconds_per_question": 12.963952991453189,
+      "seconds_per_response": 1.6204941239316486,
+      "peak_vram_bytes": 1577671680,
+      "accuracy_at_1_ci95": [
+        0.7849654224370841,
+        0.8793422512415323
+      ],
+      "pass_at_8_ci95": [
+        0.9629906568654427,
+        0.9956305431264847
+      ],
+      "majority_at_8_ci95": [
+        0.9339997129113559,
+        0.9825766976072413
+      ]
+    }
+  },
+  "paired_comparison": {
+    "table": [
+      {
+        "model": "base",
+        "accuracy_at_1": 0.8589743589743589,
+        "pass_at_8": 0.9914529914529915,
+        "majority_at_8": 0.9658119658119658,
+        "seconds_per_response": 1.2177371794872063,
+        "peak_vram_bytes": 1573084160
+      },
+      {
+        "model": "outputs/phase2/grpo-base16",
+        "accuracy_at_1": 0.8376068376068376,
+        "pass_at_8": 0.9871794871794872,
+        "majority_at_8": 0.9658119658119658,
+        "seconds_per_response": 1.6204941239316486,
+        "peak_vram_bytes": 1577671680
+      }
+    ],
+    "differences": [
+      {
+        "model": "outputs/phase2/grpo-base16",
+        "versus": "base",
+        "accuracy_at_1": {
+          "difference": -0.021367521367521368,
+          "paired_bootstrap_ci95": [
+            -0.04700854700854701,
+            0.0
+          ],
+          "corrected_questions": 2,
+          "regressed_questions": 7,
+          "discordant_questions": 9,
+          "mcnemar_exact_p_two_sided": 0.1796875
+        },
+        "pass_at_8": {
+          "difference": -0.004273504273504274,
+          "paired_bootstrap_ci95": [
+            -0.01282051282051282,
+            0.0
+          ],
+          "corrected_questions": 0,
+          "regressed_questions": 1,
+          "discordant_questions": 1,
+          "mcnemar_exact_p_two_sided": 1.0
+        },
+        "majority_at_8": {
+          "difference": 0.0,
+          "paired_bootstrap_ci95": [
+            -0.01282051282051282,
+            0.01282051282051282
+          ],
+          "corrected_questions": 1,
+          "regressed_questions": 1,
+          "discordant_questions": 2,
+          "mcnemar_exact_p_two_sided": 1.0
+        }
+      }
+    ],
+    "n_questions": 234,
+    "warning": "Bootstrap intervals on a small pilot can be degenerate; do not infer general reasoning gains."
+  },
+  "errors": {
+    "Base": {
+      "all_samples": {
+        "correct": 1563,
+        "arithmetic_error": 180,
+        "multi_step_reasoning_error": 0,
+        "incorrect_operation_selection": 0,
+        "answer_formatting_failure": 0,
+        "failed_answer_extraction": 0,
+        "truncated_completion": 1,
+        "unsupported_answer_pattern": 128,
+        "unclassified_numeric_error": 0
+      },
+      "first_samples": {
+        "correct": 201,
+        "arithmetic_error": 20,
+        "multi_step_reasoning_error": 0,
+        "incorrect_operation_selection": 0,
+        "answer_formatting_failure": 0,
+        "failed_answer_extraction": 0,
+        "truncated_completion": 0,
+        "unsupported_answer_pattern": 13,
+        "unclassified_numeric_error": 0
+      },
+      "interpretation": "Operational output labels; zero causal categories mean not established, not proven absent. Truncation and parser metrics are also reported independently."
+    },
+    "Base + GRPO": {
+      "all_samples": {
+        "correct": 1566,
+        "arithmetic_error": 182,
+        "multi_step_reasoning_error": 0,
+        "incorrect_operation_selection": 0,
+        "answer_formatting_failure": 0,
+        "failed_answer_extraction": 0,
+        "truncated_completion": 2,
+        "unsupported_answer_pattern": 122,
+        "unclassified_numeric_error": 0
+      },
+      "first_samples": {
+        "correct": 196,
+        "arithmetic_error": 23,
+        "multi_step_reasoning_error": 0,
+        "incorrect_operation_selection": 0,
+        "answer_formatting_failure": 0,
+        "failed_answer_extraction": 0,
+        "truncated_completion": 1,
+        "unsupported_answer_pattern": 14,
+        "unclassified_numeric_error": 0
+      },
+      "interpretation": "Operational output labels; zero causal categories mean not established, not proven absent. Truncation and parser metrics are also reported independently."
+    }
+  },
+  "input_hashes_verified_after_evaluation": true,
+  "raw_output_sha256": {
+    "base-test.json": "7f285980e3880f1ab01c8b653197be5900533f77b1ae973fd1914fa7138b3598",
+    "grpo-test.json": "7f1405485d3ca578fcfbb71b560b6f22f99ece06bdfdd149be5802f44dc82986"
+  }
+}

@@ -1,0 +1,219 @@
+[
+  {
+    "experiment": "base-val-v2",
+    "adapter": null,
+    "metrics": {
+      "accuracy_at_1": 0.79,
+      "pass_at_8": 0.96,
+      "majority_at_8": 0.91,
+      "format_rate": 0.90875,
+      "n_questions": 100,
+      "answer_extraction_success": 0.90875,
+      "invalid_answer_rate": 0.09125,
+      "parsed_incorrect_rate": 0.08125,
+      "truncation_rate": 0.0175,
+      "average_generated_tokens": 88.90875,
+      "seconds_per_question": 14.615669999999882,
+      "seconds_per_response": 1.8269587499999853,
+      "peak_vram_bytes": 1583707648,
+      "accuracy_at_1_ci95": [
+        0.7001985069803768,
+        0.8583445046835422
+      ],
+      "pass_at_8_ci95": [
+        0.9016278276739262,
+        0.984336949448152
+      ],
+      "majority_at_8_ci95": [
+        0.8377362530335634,
+        0.9519280048361151
+      ]
+    }
+  },
+  {
+    "experiment": "grpo-base-val-v2",
+    "adapter": "outputs\\phase2\\grpo-base16",
+    "metrics": {
+      "accuracy_at_1": 0.83,
+      "pass_at_8": 0.98,
+      "majority_at_8": 0.9,
+      "format_rate": 0.92125,
+      "n_questions": 100,
+      "answer_extraction_success": 0.92125,
+      "invalid_answer_rate": 0.07875,
+      "parsed_incorrect_rate": 0.08,
+      "truncation_rate": 0.0125,
+      "average_generated_tokens": 88.5725,
+      "seconds_per_question": 14.945209999999788,
+      "seconds_per_response": 1.8681512499999735,
+      "peak_vram_bytes": 1588348928,
+      "accuracy_at_1_ci95": [
+        0.7445181876635703,
+        0.8910652394022684
+      ],
+      "pass_at_8_ci95": [
+        0.9299868370580063,
+        0.9944981477650318
+      ],
+      "majority_at_8_ci95": [
+        0.8256326956323347,
+        0.9447714583868639
+      ]
+    }
+  },
+  {
+    "experiment": "grpo-sft-val-v2",
+    "adapter": "outputs\\phase2\\grpo-sft16",
+    "metrics": {
+      "accuracy_at_1": 0.7,
+      "pass_at_8": 0.79,
+      "majority_at_8": 0.69,
+      "format_rate": 0.9925,
+      "n_questions": 100,
+      "answer_extraction_success": 0.9925,
+      "invalid_answer_rate": 0.0075,
+      "parsed_incorrect_rate": 0.3025,
+      "truncation_rate": 0.0,
+      "average_generated_tokens": 8.42125,
+      "seconds_per_question": 1.3112099999999918,
+      "seconds_per_response": 0.16390124999999897,
+      "peak_vram_bytes": 1380405248,
+      "accuracy_at_1_ci95": [
+        0.6041496156718804,
+        0.7810524613377188
+      ],
+      "pass_at_8_ci95": [
+        0.7001985069803768,
+        0.8583445046835422
+      ],
+      "majority_at_8_ci95": [
+        0.5937376052204429,
+        0.7722043679386762
+      ]
+    }
+  },
+  {
+    "experiment": "original-grpo-val-v2",
+    "adapter": "outputs/grpo-run1",
+    "metrics": {
+      "accuracy_at_1": 0.5,
+      "pass_at_8": 0.64,
+      "majority_at_8": 0.52,
+      "format_rate": 0.975,
+      "n_questions": 100,
+      "answer_extraction_success": 0.975,
+      "invalid_answer_rate": 0.025,
+      "parsed_incorrect_rate": 0.45375,
+      "truncation_rate": 0.0,
+      "average_generated_tokens": 8.44625,
+      "seconds_per_question": 1.6692299999995885,
+      "seconds_per_response": 0.20865374999994857,
+      "peak_vram_bytes": 1378280960,
+      "accuracy_at_1_ci95": [
+        0.40382982859014716,
+        0.5961701714098528
+      ],
+      "pass_at_8_ci95": [
+        0.542352199811621,
+        0.7272892540950986
+      ],
+      "majority_at_8_ci95": [
+        0.4231640509017654,
+        0.6153561567991945
+      ]
+    }
+  },
+  {
+    "experiment": "original-sft-val-v2",
+    "adapter": "outputs/sft-run1",
+    "metrics": {
+      "accuracy_at_1": 0.52,
+      "pass_at_8": 0.63,
+      "majority_at_8": 0.53,
+      "format_rate": 0.975,
+      "n_questions": 100,
+      "answer_extraction_success": 0.975,
+      "invalid_answer_rate": 0.025,
+      "parsed_incorrect_rate": 0.44625,
+      "truncation_rate": 0.0,
+      "average_generated_tokens": 8.47875,
+      "seconds_per_question": 1.592099999999773,
+      "seconds_per_response": 0.19901249999997161,
+      "peak_vram_bytes": 1378280960,
+      "accuracy_at_1_ci95": [
+        0.4231640509017654,
+        0.6153561567991945
+      ],
+      "pass_at_8_ci95": [
+        0.5322034757513312,
+        0.7181778743049083
+      ],
+      "majority_at_8_ci95": [
+        0.4328868313724773,
+        0.6248934801789626
+      ]
+    }
+  },
+  {
+    "experiment": "sft100-val-v2",
+    "adapter": "outputs\\phase2\\sft100",
+    "metrics": {
+      "accuracy_at_1": 0.71,
+      "pass_at_8": 0.79,
+      "majority_at_8": 0.7,
+      "format_rate": 0.9925,
+      "n_questions": 100,
+      "answer_extraction_success": 0.9925,
+      "invalid_answer_rate": 0.0075,
+      "parsed_incorrect_rate": 0.3,
+      "truncation_rate": 0.0,
+      "average_generated_tokens": 8.41625,
+      "seconds_per_question": 1.2435299999995186,
+      "seconds_per_response": 0.15544124999993983,
+      "peak_vram_bytes": 1361412096,
+      "accuracy_at_1_ci95": [
+        0.6146092505999207,
+        0.7898529302601586
+      ],
+      "pass_at_8_ci95": [
+        0.7001985069803768,
+        0.8583445046835422
+      ],
+      "majority_at_8_ci95": [
+        0.6041496156718804,
+        0.7810524613377188
+      ]
+    }
+  },
+  {
+    "experiment": "sft50-val-v2",
+    "adapter": "outputs\\phase2\\sft50",
+    "metrics": {
+      "accuracy_at_1": 0.61,
+      "pass_at_8": 0.72,
+      "majority_at_8": 0.63,
+      "format_rate": 0.9775,
+      "n_questions": 100,
+      "answer_extraction_success": 0.9775,
+      "invalid_answer_rate": 0.0225,
+      "parsed_incorrect_rate": 0.3575,
+      "truncation_rate": 0.0,
+      "average_generated_tokens": 8.6475,
+      "seconds_per_question": 1.6165499999999156,
+      "seconds_per_response": 0.20206874999998944,
+      "peak_vram_bytes": 1381471232,
+      "accuracy_at_1_ci95": [
+        0.5120283616749817,
+        0.699832780680298
+      ],
+      "pass_at_8_ci95": [
+        0.6251178763865427,
+        0.7986044083240164
+      ],
+      "majority_at_8_ci95": [
+        0.5322034757513312,
+        0.7181778743049083
+      ]
+    }
+  }
+]

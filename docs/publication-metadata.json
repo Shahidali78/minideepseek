@@ -1,0 +1,11 @@
+{
+  "repository": "Shahidali78/minideepseek",
+  "description": "Local Qwen3-0.6B LoRA SFT/GRPO research on a 6 GB GPU, with frozen paired evaluation, verifiable rewards and an evidence dashboard.",
+  "topics": [
+    "reinforcement-learning",
+    "grpo",
+    "llm-finetuning",
+    "lora",
+    "mathematical-reasoning"
+  ]
+}

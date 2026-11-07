@@ -1,0 +1,17 @@
+{
+  "checked_utc": "2026-11-07T17:33:00.709044+00:00",
+  "checks": {
+    "pytest": "passed",
+    "syntax": "passed",
+    "dependencies": "passed",
+    "dashboard": "passed",
+    "publication_scan": "passed"
+  },
+  "cpu_tests_passed": 101,
+  "protected_historical_files_unchanged": 96,
+  "final_completions_recomputed": 3744,
+  "frozen_inputs_and_source_snapshot_verified": true,
+  "checkpoint_loading": "Both finalists loaded and generated in the recorded full GPU evaluations",
+  "local_dashboard_screenshot": "docs/screenshots/dashboard.png; actual interface rendered and visually inspected",
+  "remote_ci": "Not yet executed at local verification time"
+}
